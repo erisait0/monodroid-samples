@@ -24,9 +24,10 @@ steps:
     feedsToUse: 'select'
 - task: XamarinAndroid@1
   inputs:
-    projectFile: 'AIDLDemo/AIDLDemo/AIDLDemo.csproj'
+    projectFile: '**/*.csproj'
     outputDirectory: '$(build.binariesdirectory)/$(BuildConfiguration)'
     configuration: '$(BuildConfiguration)'
+    msbuildVersionOption: 'latest'
     jdkOption: 'JDKVersion'
 - task: AndroidSigning@3
   inputs:
