@@ -21,9 +21,8 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    restoreSolution: '**/*.sln'
+    restoreSolution: 'AccelerometerPlay/AccelerometerPlay.sln'
     feedsToUse: 'select'
-
 - task: XamarinAndroid@1
   inputs:
     projectFile: 'AccelerometerPlay/AccelerometerPlay/AccelerometerPlay.csproj'
