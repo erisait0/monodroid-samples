@@ -21,11 +21,11 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    restoreSolution: 'AccelerometerPlay/AccelerometerPlay.sln'
+    restoreSolution: 'AccessoryViews/AccessoryViews.sln'
     feedsToUse: 'select'
 - task: XamarinAndroid@1
   inputs:
-    projectFile: 'AccelerometerPlay/AccelerometerPlay/AccelerometerPlay.csproj'
+    projectFile: 'AccessoryViews/AccessoryViews.csproj'
     outputDirectory: '$(build.binariesdirectory)/$(BuildConfiguration)'
     configuration: '$(BuildConfiguration)'
     jdkOption: 'JDKVersion'
