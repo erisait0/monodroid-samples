@@ -20,11 +20,11 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    restoreSolution: 'AccessoryViews/AccessoryViews.sln'
+    restoreSolution: 'AIDLDemo/AIDLDemoXamarin.sln'
     feedsToUse: 'select'
 - task: XamarinAndroid@1
   inputs:
-    projectFile: 'AccessoryViews/AccessoryViews.csproj'
+    projectFile: 'AIDLDemo/AIDLDemo/AIDLDemo.csproj'
     outputDirectory: '$(build.binariesdirectory)/$(BuildConfiguration)'
     configuration: '$(BuildConfiguration)'
     jdkOption: 'JDKVersion'
